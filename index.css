@@ -91,6 +91,26 @@
  }
 
 
+ /* MEDIA QUERIES DE HOME*/
+
+ @media (max-width: 1280px) {
+
+    #home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textoHome {
+        width: 100%;
+        height: 100%;
+    }
+
+  }
+
+
+
+
 
 
  /* CARDS */
@@ -188,6 +208,32 @@
  .logoCripto {
      padding: 1rem;
  }
+
+
+
+
+
+ /* MEDIA QUERIES DE CONTACTO  */
+
+ @media (max-width: 1280px) {
+
+  
+    .ilustracion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+   
+    }
+
+    .contacto p {
+        width: 95%;
+        padding: 2rem;
+   
+    }
+
+
+  }
 
 
 
