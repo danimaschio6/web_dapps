@@ -52,12 +52,20 @@
      font-size: 35px;
      text-align: center;
      color: #FFFFFF;
+     width: 100%;
+     border: none;
 
  }
 
  .boton .btn:hover {
      cursor: pointer;
-     border: none
+     border: none;
+     color:white;
+     transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transition: all .5s;
+
  }
 
  .titulo, .row{
@@ -138,8 +146,6 @@
  }
 
  .card {
-     max-width: 19rem;
-     height: 29rem;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -147,6 +153,13 @@
      margin: 2rem;
      background: linear-gradient(180deg, #3E1387 58.24%, #22066D 100%);
      border-radius: 20px;
+ }
+
+ .card:hover{
+    transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transition: all .5s;
  }
 
  .card img {
@@ -412,24 +425,43 @@
 
  .formulario form input[type="text"]::placeholder {
      padding-left: 3rem;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
      background-image: url(./img/Icono\ email.svg);
-     background-size: 5% ;
+     background-size: 8% ;
+     border-radius: 15px;
      background-repeat: no-repeat;
      background-position: left center;
  }
 
+ .formulario form .comentarios input[type="text"]::placeholder{
+    padding-left: 3rem;
+    background-image: url(./img/Icono\ email.svg);
+    background-size: 8% ;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+ }
+
  .formulario form input[type="number"]::placeholder {
      padding-left: 3rem;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
      background-image: url(./img/Icono\ telefono.svg);
-     background-size: 5% ;
+     background-size: 8% ;
+     border-radius: 15px;
      background-repeat: no-repeat;
      background-position: left center;
  }
 
  .formulario form input[type="email"]::placeholder {
      padding-left: 3rem;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
      background-image: url(./img/Icono\ email.svg);
-     background-size: 5% ;
+     background-size: 8% ;
+     border-radius: 15px;
      background-repeat: no-repeat;
      background-position: left center;
  }
@@ -454,18 +486,21 @@
 
 
  .formulario .botonFormulario {
+     border: double 4px transparent;
+     border-radius: 60px;
+     background-image: linear-gradient(90deg, #17054c, #270653), radial-gradient(circle at top left, #B0F65B,#01C6C5, #4A7FF3,#8171F5,#B66DF3);
+     background-origin: border-box;
+     color: white;
+     background-clip: content-box, border-box;
      font-weight: 600;
      font-style: italic;
-     font-size: 25px;
+     font-size: 30px;
      line-height: 41.02px;
      text-align: center;
-     width: 29rem;
-     height: 3rem;
+     width: 100%;
+     height: 4rem;
      color: white;
-     background: transparent;
      border: 3px solid transparent;
-     border-image: linear-gradient(270deg, #B0F65B 0%, #01C6C5 22.97%, #4A7FF3 51.93%, #8171F5 83.85%, #B66DF3 100%) 1;
-     border-radius: 100px;
      margin-bottom: 5rem;
  }
 
@@ -481,41 +516,40 @@
     font-style: italic;
     font-weight: 600;
     font-size: 30px;
-    /* margin-bottom: 27%; */
-    /* margin-left: 5%; */
     background-image: url(./img/Ilustracionform.svg);
     background-repeat: no-repeat;
     min-height: 582px;
     width: 100%;
     z-index: 999;
+    text-align: left;
  }
 
  .direccion ul .dir {
      width: 25rem;
-     height: 3rem;
      background: #BB6DF3;
-     margin: 1rem;
+     margin-top: 1rem;
+     padding-left: 1rem;
  }
 
  .direccion .ciudad {
      width: 30rem;
-     height: 3rem;
      background: #BB6DF3;
-     margin: 1rem;
+     margin-top: 1rem;
+     padding-left: 1rem;
  }
 
  .direccion .email{
     width: 20rem;
-    height: 3rem;
     background: #5277F7;
-    margin: 1rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
  }
 
  .direccion .telefono{
-    width: 18rem;
-    height: 3rem;
+    width: 19rem;
     background: #00C7C5;
-    margin: 1rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
  }
 
 
@@ -602,9 +636,7 @@ footer{
     .logoDapps{
   
         border-right: none;
-        border-bottom: 2px solid grey;
-        margin-bottom: 2rem;    
-        padding: 2rem; 
+        margin-bottom: 3rem;    
     }
 
 
