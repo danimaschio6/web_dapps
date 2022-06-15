@@ -21,20 +21,18 @@
  /* HOME */
 
  #home {
-     background-image: url("img/prueba.svg");
-     /* background-image: url("img/Imagen.png"); */
+     /* background-image: url("img/prueba.svg"); */
+     background-image: url(img/Imagen.png);
      background-repeat: no-repeat;
-     background-size: cover;
+     background-size: 100% 100%;
      width: 100%;
-     height: 753px;
+     height: 750px;
  }
 
  .textoHome {
-     width: 50%;
-     height: 80%;
+    height: 450px;
      display: flex;
      flex-direction: column;
-     align-items: center;
      justify-content: center;
  }
 
@@ -107,11 +105,11 @@
 
  @media (max-width: 1280px) {
 
-    #home{
+    /* #home{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
     .textoHome {
         width: 100%;
@@ -120,8 +118,25 @@
 
   }
 
+  @media (max-width: 991px) {
 
+    #home{
+        background-image: none;
+    } 
+    .textoHome{
+        height: auto;
+    }
 
+    .img-not-background{
+        width: 50%;
+        margin: auto;
+    }
+
+  }
+
+ .containerUp {
+    margin-top: -50px;
+ }
 
 
 
@@ -195,6 +210,13 @@
     width: 25vh;
  }
 
+ .card1 .foto:hover{
+    transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transition: all .5s;
+ }
+
  /* CONTACTO */
 
  .contacto {
@@ -232,7 +254,13 @@
  }
 
 
+ @media (max-width: 991px) {
 
+    .containerUp {
+        margin-top: 0px;
+    }
+
+  }
 
 
  /* MEDIA QUERIES DE CONTACTO  */
@@ -503,7 +531,7 @@
  .formulario .botonFormulario {
      border: double 4px transparent;
      border-radius: 60px;
-     background-image: linear-gradient(90deg, #17054c, #270653), radial-gradient(circle at top left, #B0F65B,#01C6C5, #4A7FF3,#8171F5,#B66DF3);
+     background-image: linear-gradient(90deg, #12054d, #12054d), radial-gradient(circle at top left, #B0F65B,#01C6C5, #4A7FF3,#8171F5,#B66DF3);
      background-origin: border-box;
      color: white;
      background-clip: content-box, border-box;
