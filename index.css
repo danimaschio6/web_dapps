@@ -17,6 +17,27 @@
 
  }
 
+ .lang{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #B086CC;
+ }
+
+ .lang a:hover{
+    color: black;
+ }
+
+ .lang a {
+    text-decoration: none;
+    color: white;
+
+ }
+
+
+
+
 
  /* HOME */
 
@@ -31,9 +52,9 @@
 
  .textoHome {
     height: 450px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
  }
 
  .boton {
@@ -202,6 +223,27 @@
 
  .card1 .foto{
     width: 25vh;
+ }
+
+ .fotoHiring{
+    width: 25vh;
+    height: 25vh;
+    border-radius: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ .fotoHiring p{
+    color: #5427A8;
+    text-align: center;
+    font-size: 20vh;
+ }
+
+ .card1 .textoHiring{
+    margin-top: 0.5rem;
  }
 
  .card1 .foto:hover{
