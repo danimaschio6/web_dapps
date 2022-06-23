@@ -37,7 +37,10 @@
  }
 
 
-
+ ul.navbar-nav{
+    display: flex;
+    align-items: center;
+ }
 
 
  /* HOME */
@@ -67,14 +70,13 @@
      font-weight: 500;
      line-height: 2.5rem;
      text-align: center;
-     width: 29rem;
      width: 80%;
-     margin: auto;
+     margin: 0 0 auto;
  }
 
  .boton .btn {
      font-weight: 500;
-     font-size: 35px;
+     font-size: 30px;
      text-align: center;
      color: #FFFFFF;
      width: 100%;
@@ -101,25 +103,25 @@
      font-weight: 300;
      font-size: 40px;
      line-height: 4rem;
-     text-align: center;
+
 
  }
 
  .titulo .blockchain {
-     font-size: 12vh;
-     text-align: center; 
+     font-size: 5.5rem;
+     font-family: 'Roboto Condensed';
      font-style: italic;
-     
+     font-weight: 200;
  }
 
  .titulo p {
      font-size: 1vh;
      line-height: 2rem;
-     text-align: center;
      color: #53E4F7;
-     margin: 1rem auto 2rem;
-     width: 85%;
+     margin: 0.8rem 0.3rem 1.7rem;
+     width: 80%;
      font-weight: 100;
+     text-align: center;
  }
 
 
@@ -231,13 +233,13 @@
  }
 
  .card1 .foto{
-    width: 20vh;
+    width: 140px;
  }
 
  .fotoHiring{
-    width: 20vh;
-    height: 20vh;
-    border-radius: 80px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -245,24 +247,18 @@
 
  }
 
- .fotoHiring:hover{
-    transform: scale(1.04);
-    -moz-transform: scale(1.04);
-    -webkit-transform: scale(1.04);
-    transition: all .5s;
- }
-
  .fotoHiring p{
     color: #5427A8;
     text-align: center;
-    font-size: 20vh !important;
+    font-size: 120px !important;
  }
 
  .card1 .textoHiring{
     margin-top: 0.5rem;
  }
 
- .card1 .foto:hover{
+ .card1 .foto:hover,
+ .fotoHiring:hover{
     transform: scale(1.04);
     -moz-transform: scale(1.04);
     -webkit-transform: scale(1.04);
@@ -273,27 +269,27 @@
 
  .contacto {
      display: flex;
-     flex-direction: column;
      align-items: center;
      justify-content: center;
      text-align: center;
- }
-
- .ilustracion {
-     display: flex;
      flex-direction: row;
-     align-items: center;
-     justify-content: center;
-
+     padding-top: 5rem;
+     flex-wrap: wrap;
  }
 
-.imgContacto {
+
+ .ilustracion .col-md-7 {
+    display: flex;
+    align-items: center;
+ }
+
+
+
+/* .imgContacto {
      display: flex;
      align-items: center;
      justify-content: center;
-     margin-right: 1.5rem;
-
- } 
+ }  */
 
  .contacto p {
      font-style: normal;
@@ -305,16 +301,16 @@
 
  }
 
- .logos {
+/* .logos {
      width: 8rem;
      display: flex;
      flex-direction: row;
-
-
- }
+    } 
+*/
 
  .logosC{
     padding: 5px;
+    width: 8rem;
  }
 
 
@@ -373,7 +369,7 @@
      align-items: center;
      justify-content: center;
      text-align: center;
-     margin-top: 10rem;
+     margin-top: 5rem;
  }
 
  .clients h2 {
@@ -388,7 +384,8 @@
      font-size: 20px;
      line-height: 59px;
      text-align: center;
-
+     margin-bottom: -40px;
+     z-index: 999;
  }
 
  .imagenClientes {
@@ -399,7 +396,7 @@
  /* TEAM */
 
  .team {
-     margin-top: 10rem;
+     margin-top: 4rem;
 
  }
 
@@ -420,14 +417,13 @@
      font-size: 20px;
      line-height: 59px;
      text-align: center;
-     padding-bottom: 2rem;
  }
 
  .fotos {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
      justify-items: center;
-     padding: 2rem;
+     padding: 0 2rem;
  }
 
  .fotos .card1 {
@@ -444,27 +440,29 @@
  .card1 p{
     padding: 0;
     margin: 0;
-    font-size: 2vh;
-
+    font-size: 0.9rem;
  }
-
- 
-
-
-
 
  /* CONTACTO1 */
 
  .contact1 {
-     width: 100%;
-     height: 15rem;
-     left: 0rem;
-     background: url("./img/separador-contactUs.svg");
-     display: flex;
-     align-items: center;
-     justify-content: start;
+    width: 100%;
+    height: 100%;
+    /* height: 15rem; */
+    left: 0rem;
+    /* background: url(./img/separador-contactUs.svg); */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* color: #16054f; */
+    background: linear-gradient(180deg, rgba(22,5,79,1) 0%, rgba(46,8,91,1) 45%, rgba(59,6,94,1) 68%, rgba(64,10,114,1) 83%, rgba(69,16,138,1) 100%);
  }
 
+ .contact1 .row{
+    display: flex;
+    align-items: center;
+    height: 100%;
+ }
 
  .contact1 .botonContacto {
     width: 300px;
@@ -494,13 +492,6 @@
 
  
  /* CONTACTO FORMULARIO */
-
- .contacto {
-     display: flex;
-     flex-direction: row;
-     padding-top: 5rem;
-
- }
 
  .formulario form {
      display: flex;
@@ -641,12 +632,17 @@
 
  /* CONTACTO DIRECCION */
 
-.contacto{
-    margin-left: 2rem;
+ .contacto-form {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    padding-top: 3rem;
     flex-wrap: wrap;
 }
- .contacto .direccion {
+
+ .contacto-form .direccion {
     font-style: italic;
     font-weight: 600;
     font-size: 30px;
@@ -794,3 +790,26 @@ footer{
     
 
   }
+
+  /* MEDIA QUERIES fonts  */
+
+    @media (max-width: 1280px) {
+        
+    }
+
+    @media (max-width: 1200px) {
+        
+    }
+
+    @media (max-width: 991px) {
+        
+    }
+
+
+    @media (max-width: 768px) {
+
+    }
+
+    @media (max-width: 676px) {
+
+    }
