@@ -1,12 +1,12 @@
  * {
      margin: 0;
      padding: 0;
+     font-family: 'Roboto', sans-serif
  }
 
  .cuerpo {
      background-color: #12054D;
      color: white;
-     font-family: 'Roboto', sans-serif;
  }
 
  .nav-item:hover {
@@ -913,10 +913,9 @@
      .navbar>.container-xl,
      .navbar>.container-xxl {
          display: flex;
-         flex-wrap: inherit;
+         flex-wrap: nowrap;
          align-items: center;
          justify-content: space-between;
-         flex-direction: column;
          padding: 0.5rem;
      }
 
@@ -1035,6 +1034,10 @@
          justify-content: center;
      }
 
+     .fotoHiring, .textoHiring {
+         display: none;
+     }
+
 
      /* formulario */
      .formulario form {
@@ -1045,25 +1048,28 @@
          font-size: 20px;
      }
 
+
+
+     /* CONTACTO  */
      /* direccion */
 
+     
+     .contacto-form .direccion{
+        background-image: none;
+        min-height: 400px
+     }
      .direccion,::after, ::before{
         box-sizing: content-box;
      }
 
      .direccion ul .dir,
      .direccion .email,
+     .direccion .ciudad,
      .direccion .telefono {
          padding-left: 0.5rem;
          padding-right: 0.5rem;
          font-size: 20px;
-     }
-
-     .direccion .ciudad{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        font-size: 20px;
-        width: 25rem;
+         width: 100%;
      }
 
      .direccion ul {
