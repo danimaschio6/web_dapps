@@ -654,14 +654,57 @@
 
 
 
+
+/* aca */
  /* MEDIA QUERIES DE HOME*/
 
  @media (max-width: 1280px) {
 
      .textoHome {
          width: 100%;
-     }
+     } 
+
+     .titulo h2 {
+        font-weight: 200;
+        font-size: 35px;
+        line-height: 3.5rem;
+    }
+
+    .titulo .blockchain {
+        font-size: 5rem;
+
+    }
  }
+
+
+ @media (max-width: 1200px) {
+
+    .titulo h2 {
+        font-weight: 150;
+        font-size: 28px;
+        line-height: 3rem;
+    }
+
+    .titulo .blockchain {
+        font-size: 5rem;
+        font-weight: 600;
+    }
+
+    .textoHome {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .boton {
+        width: 90%;
+    }
+
+ }
+
+
 
  @media (max-width: 991px) {
 
@@ -682,22 +725,49 @@
          height: 750px;
      }
 
+     .contacto p {
+        font-size: 20px;
+        line-height: 40px
+    }
+
+    .titulo h2 {
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 2.5rem;
+    }
+
+    .titulo .blockchain {
+        font-size: 4.5rem;
+        font-weight: 200;
+    }
+
+
+    .titulo p {
+        font-size: 0.5vh;
+        line-height: 1.7rem;
+        font-weight: 100;
+        width: 70%;
+    }
+
+    .contacto p {
+        font-size: 20px;
+    }
+
+    .boton {
+        width: 70%;
+    }
+
 
      /* SECCION CONTACT1 (imagen de aviones)*/
-
      .contact1 .row {
          display: flex;
          align-items: center;
          flex-direction: column;
          height: 100%;
      }
-
      .contact1 .botonContacto {
          margin-left: 0;
      }
-
-
-
 
      .containerUp {
          margin-top: 0px;
@@ -705,13 +775,95 @@
 
  }
 
+
+ @media (max-width: 768px) {
+    #home {
+        background-image: none;
+        height: 90vh;
+
+    }
+
+    .titulo h2 {
+        line-height: 2rem;
+        font-weight: 100;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .titulo .blockchain {
+        font-size: 4.5rem;
+        font-weight: 200;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .titulo p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        font-weight: 100;
+    }
+
+    .textoHome {
+        align-items: center;
+        height: 90%;
+
+    }
+
+    .boton {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+ }
+
+
  @media (max-width: 676px) {
      .titulo2 {
          margin-top: 80px;
      }
+     
+    .titulo h2 {
+        line-height: 2rem;
+        font-weight: 100;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .titulo .blockchain {
+        font-size: 3rem;
+        font-weight: 200;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .titulo p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+    }
 
+    .textoHome {
+        align-items: center;
+        height: 90%;
+    }
+
+    .boton {
+        width: 100%;
+    }
 
  }
 
@@ -763,16 +915,15 @@
 
 
 
-
-
-
-
-
  @media (max-width: 676px) {
      .imgContacto img {
          width: 100%;
      }
  }
+
+
+
+
 
  /* MEDIA QUERIES FOOTER  */
 
@@ -813,89 +964,10 @@
 
  }
 
- /* MEDIA QUERIES fonts  */
 
- @media (max-width: 1280px) {
-     .titulo h2 {
-         font-weight: 200;
-         font-size: 35px;
-         line-height: 3.5rem;
-     }
-
-     .titulo .blockchain {
-         font-size: 5rem;
-
-     }
-
- }
-
- @media (max-width: 1200px) {
-
-     .titulo h2 {
-         font-weight: 150;
-         font-size: 28px;
-         line-height: 3rem;
-     }
-
-     .titulo .blockchain {
-         font-size: 5rem;
-         font-weight: 600;
-     }
-
-     .textoHome {
-         height: 60%;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-
-     }
-
-
-     .boton {
-         width: 90%;
-     }
-
-
-     .contacto p {
-         font-size: 20px;
-         line-height: 40px
-     }
-
-
- }
+ /* SECCION LOGOS */
 
  @media (max-width: 991px) {
-     .titulo h2 {
-         font-weight: 100;
-         font-size: 30px;
-         line-height: 2.5rem;
-     }
-
-     .titulo .blockchain {
-         font-size: 4.5rem;
-         font-weight: 200;
-     }
-
-
-     .titulo p {
-         font-size: 0.5vh;
-         line-height: 1.7rem;
-         font-weight: 100;
-         width: 70%;
-     }
-
-     .contacto p {
-         font-size: 20px;
-     }
-
-     .boton {
-         width: 70%;
-     }
-
-
-
-
-     /* LOGOS */
 
      .contacto,
      .ilustracion,
@@ -923,65 +995,10 @@
          padding: 0;
      }
 
+}
 
 
-
-
-
- }
-
-
- @media (max-width: 768px) {
-
-
-     #home {
-         background-image: none;
-         height: 90vh;
-
-     }
-
-     .titulo h2 {
-         line-height: 2rem;
-         font-weight: 100;
-         font-size: 1.2rem;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-
-     }
-
-     .titulo .blockchain {
-         font-size: 4.5rem;
-         font-weight: 200;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-
-     }
-
-     .titulo p {
-         font-size: 1.2rem;
-         line-height: 1.7rem;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         width: 95%;
-         font-weight: 100;
-     }
-
-     .textoHome {
-         align-items: center;
-         height: 90%;
-
-     }
-
-     .boton {
-         width: 100%;
-         margin-bottom: 100px;
-     }
-
-
-
+@media (max-width: 768px) {
 
      /* ICONITO DE MENU HAMBURGUESA */
 
@@ -1033,13 +1050,10 @@
 
 
  @media (max-width: 676px) {
-
      /* NAV */
-
      .logoDappsInicio {
          width: 80%;
      }
-
 
      .navbar>.container,
      .navbar>.container-fluid,
@@ -1055,43 +1069,6 @@
 
      }
 
-
-     /* HOME */
-
-     .titulo h2 {
-         line-height: 2rem;
-         font-weight: 100;
-         font-size: 1.2rem;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-
-     .titulo .blockchain {
-         font-size: 3rem;
-         font-weight: 200;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-
-     .titulo p {
-         font-size: 1.2rem;
-         line-height: 1.7rem;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         width: 95%;
-     }
-
-     .textoHome {
-         align-items: center;
-         height: 90%;
-     }
-
-     .boton {
-         width: 100%;
-     }
 
 
      /* seccion LOGOS  */
@@ -1168,10 +1145,7 @@
      }
 
 
-
-     /* CONTACTO  */
-     /* direccion */
-
+     /* contacto */
 
      .contacto-form .direccion {
          background-image: none;
@@ -1212,4 +1186,8 @@
          margin: 0;
 
      }
+
+
+
+
  }
