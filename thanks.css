@@ -1,0 +1,46 @@
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 15px;
+}
+
+body{
+    background-color: #12054D;
+    color: white;
+}
+
+
+.boton {
+    background: linear-gradient(270deg, #B0F65B 0%, #01C6C5 22.97%, #4A7FF3 51.93%, #8171F5 83.85%, #B66DF3 100%);
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+    margin: 0 0 auto;
+    width: 150px;
+}
+
+.boton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+
+.boton a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+
+}
+
+
+@media (max-width: 676px){
+    .message h1{
+        font-size: 25px;
+    }
+}
