@@ -50,9 +50,8 @@
  /* HOME */
 
  #home {
-     /* background-image: url(img/headerr.png); */
-     /* background-image: url(img/headerPrueba.jpeg); */
-     background-image: url(img/headerPrueba2.png);
+     /* background-image: url(img/headerPrueba2.png); */
+     background-image: url(img/fondoHome.png);
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
