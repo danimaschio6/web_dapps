@@ -578,19 +578,19 @@
      text-align: left;
  }
 
- .direccion ul .dir {
+ /* .direccion ul .dir {
      width: 25rem;
      background: #BB6DF3;
      margin-top: 1rem;
      padding-left: 1rem;
- }
+ } */
 
- .direccion .ciudad {
+ /* .direccion .ciudad {
      width: 30rem;
      background: #BB6DF3;
      margin-top: 1rem;
      padding-left: 1rem;
- }
+ } */
 
  .direccion .email {
      width: 20rem;
