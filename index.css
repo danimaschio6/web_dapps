@@ -9,6 +9,36 @@
      color: white;
  }
 
+ header.abajo{
+    background-color:  #12054D;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+ }
+
+ header.abajo .logoDappsInicio{
+    display: none;
+ }
+
+ header.abajo .logoDappsInicioScroll{
+    display: block;
+ }
+
+ header .logoDappsInicioScroll {
+    display: none;
+ }
+
+ .contactUs{
+    background: #B66DF3;
+    border-radius: 20px;
+    margin-right: 1rem;
+
+ }
+
  .justify-content-header {
     justify-content: end !important;
  }
@@ -66,6 +96,7 @@
      display: flex;
      flex-direction: column;
      justify-content: center;
+     padding-top: 10rem;
  }
 
  .boton {
@@ -574,7 +605,8 @@
      background-image: url(./img/Ilustracionform.svg);
      background-repeat: no-repeat;
      min-height: 582px;
-     width: 100%;
+     min-width: 605px;
+     /* width: 100%; */
      z-index: 999;
      text-align: left;
  }
@@ -601,7 +633,7 @@
  }
 
  .direccion .telefono {
-     width: 19rem;
+     width: 22rem;
      background: #00C7C5;
      margin-top: 1rem;
      padding-left: 1rem;
@@ -618,7 +650,6 @@
 
 
  .logoDapps {
-     width: 50%;
      border-right: 2px solid grey;
      margin-bottom: 2rem;
  }
@@ -630,13 +661,11 @@
  footer {
      display: flex;
      flex-direction: row;
-
  }
 
  .datosFooter {
      width: 50%;
      display: flex;
-     align-items: center;
      justify-content: center;
  }
 
@@ -646,14 +675,27 @@
 
  .datosFooter ul li {
      width: 15rem;
-     height: 4rem;
+     height: 2rem;
      font-weight: 500;
      font-size: 15px;
  }
 
+
  .datosFooter ul li a {
      color: white;
      text-decoration: none;
+ }
+
+ .datosFooter .services .titulo{
+    color: #999999;
+    font-weight: 650;
+    text-align: left;
+ }
+
+ .datosFooter .contact p{
+    color: #999999;
+    font-weight: 650;
+    text-align: left;
  }
 
  .redesSociales {
@@ -680,6 +722,10 @@
      margin-top: 60px;
  }
 
+ .logoDapps{
+    text-align: center;
+}
+
 /* media queries totales */
 
 
@@ -692,6 +738,7 @@
 @media (max-width: 1280px) {
     footer {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -699,6 +746,7 @@
     .logoDapps {
         border-right: none;
         margin-bottom: 2rem;
+/* aca */
     }
     .redesSociales {
         border-left: none;
@@ -935,7 +983,7 @@
 
 
     .logoDapps img{
-        padding-left: 3rem
+        padding-left: 2rem
     }
      
 }
@@ -1148,7 +1196,7 @@
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         font-size: 20px;
-        width: 100%;
+        /* width: 100%; */
     }
     .direccion ul {
         padding-left: 0;
@@ -1161,6 +1209,16 @@
         padding: 0;
         margin: 0;
     }
+
+    .datosFooter{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
 }
 @media (max-width: 575px) {
     .logoDappsInicio {

@@ -48,8 +48,19 @@
     
                 gtag('config', 'AW-436735571');
     </script>
-        
+
+            
     <meta name="google-site-verification" content="8JtDPfw-y8rLd4i4WL72Tk5_dKsfChiM9F4CyVehJF0" />
+
+    
+    <!-- javascript para detectar cuando baja el navbar-->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY>0);
+        })
+    </script>
 
 </head>
 
@@ -57,11 +68,12 @@
 
     <main>
         <div id="home">
-            <header class="container">
-                        <nav class="navbar navbar-expand-lg" id="barra">
+            <header>
+                        <nav class="navbar navbar-expand-lg container" id="barra">
                             <div class="container-fluid">
                                 <a class="navbar-brand px-0" href="#inicio">
                                     <img src="./img/logo_DApps.svg" alt="logo" class="logoDappsInicio">
+                                    <img src="./img/logo-02 1.svg" alt="logo" class="logoDappsInicioScroll">
                                 </a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -70,7 +82,7 @@
                                     <hr>
                                     <hr>
                                 </button>
-                                <div class="collapse navbar-collapse nav justify-content-header px-3" id="navbarNav" style="font-style: italic;">
+                                <div class="collapse navbar-collapse nav justify-content-header px-3" id="navbarNav" style="font-style: italic; font-weight: 900;">
                                     <ul class="navbar-nav">
                                         <li class="nav-item px-4">
                                             <a class="nav-link  text-white" aria-current="page" href="#">Inicio</a>
@@ -81,7 +93,7 @@
                                         <li class="nav-item px-4">
                                             <a class="nav-link  text-white" href="#clientes">Clientes</a>
                                         </li>
-                                        <li class="nav-item px-4">
+                                        <li class="nav-item px-4 contactUs">
                                             <a class="nav-link  text-white" href="#contactUs">Contacto</a>
                                         </li>
 
@@ -135,7 +147,7 @@
                     <div class="card" >
                         <img src="./img/icon1.svg" alt="icon" class="card-img-top">
                         <div class="card-body">
-                            <h3 class="card-title">Market Places de NFT Personalizados</h3>
+                            <h3 class="card-title" style="font-weight: 700">Market Places de NFT Personalizados</h3>
                             <p class="card-text">Agrégale valor a tu colección de NFT intercambiándolos con tu propio marketplace.</p>
                         </div>
                     </div>
@@ -144,7 +156,7 @@
                     <div class="card" >
                         <img src="./img/icon2.svg" alt="icon" class="card-img-top" style="padding: 0;">
                         <div class="card-body">
-                            <h3 class="card-title" style="padding: 0;">Tokenización de activos financieros</h3>
+                            <h3 class="card-title" style="padding: 0; font-weight: 700">Tokenización de activos financieros</h3>
                             <p class="card-text">Tokeniza tus activos financieros y accede a mejores inversiones en Real Estate, Equity Shares, Oro y más.</p>
                         </div>
                     </div>
@@ -153,7 +165,7 @@
                     <div class="card" >
                         <img src="./img/icon3.svg" alt="icon" class="card-img-top">
                         <div class="card-body">
-                            <h3 class="card-title">Apps Descentralizadas, DAOs & DeFi</h3>
+                            <h3 class="card-title" style="font-weight: 700">Apps Descentralizadas, DAOs & DeFi</h3>
                             <p class="card-text">Crea soluciones personalizables desarrolladas a través de tecnología Smart Contract.
                             </p>
                         </div>
@@ -163,7 +175,7 @@
                     <div class="card" >
                         <img src="./img/icon4.svg" alt="icon" class="card-img-top">
                         <div class="card-body">
-                            <h3 class="card-title">Plataformas de creación de Tokens</h3>
+                            <h3 class="card-title" style="font-weight: 700">Plataformas de creación de Tokens</h3>
                             <p class="card-text">Genera tu token ERC20 en menos de un minuto y sin saber código!
                             </p>
                         </div>
@@ -173,7 +185,7 @@
                     <div class="card" >
                         <img src="./img/icon5.svg" alt="icon" class="card-img-top">
                         <div class="card-body" style="display: flex; flex-direction: column; align-items: center;">
-                            <h3 class="card-title" style="width: 80%;">Soluciones de Minteo de NFT</h3>
+                            <h3 class="card-title" style="width: 80%; font-weight: 700">Soluciones de Minteo de NFT</h3>
                             <p class="card-text">Maneja y personaliza tus NFTs con una interfaz moderna, interactiva y segura.
                             </p>
                         </div>
@@ -184,7 +196,7 @@
                     <div class="card" >
                         <img src="./img/icon6.svg" alt="icon" class="card-img-top">
                         <div class="card-body" style="display: flex; flex-direction: column; align-items: center;">
-                            <h3 class="card-title" style="width: 70%;">Proyectos ICO & IDO</h3>
+                            <h3 class="card-title" style="width: 70%; font-weight: 700">Proyectos ICO & IDO</h3>
                             <p class="card-text">Obtiene fondos para tu startup rápidamente con el desarrollo de proyectos ICO e IDO.
                             </p>
                         </div>
@@ -413,8 +425,15 @@
                     <div class="col-lg-6">
                         <div class="direccion">
                             <ul>
-                                <li class="email">hola@dappsfactory.io</li>
-                                <li class="telefono">Tel.+54 11-7079-1777</li>
+                                <li class="email">hello@dappsfactory.io</li>
+                                <li class="telefono">
+                                    <img src="./img/Vector_avion.png" alt="">
+                                    Tel.+54 11-7079-1777
+                                </li>
+                                <li class="telefono">
+                                    <img src="./img/Vector_avion.png" alt="">
+                                    @DAppsFactory
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -439,7 +458,36 @@
         </div>
 
         <div class="datosFooter">
-            <ul>
+            <ul class="services">
+                <li>
+                    <p class="titulo">Our Services</p>
+                </li>
+                <li>
+                    <p>Personalized  NFT Market Places</p>
+                </li>
+                <li>
+                    <p>NFT Minting  Solutions</p>
+                </li>
+                <li>
+                    <p>Financial Assets Tokenization</p>
+                </li>
+                <li>
+                    <p>Token Creation Platforms</p>
+                </li>
+                <li>
+                    <p>Decentralized Apps, DAOs & DeFi </p>
+                </li>
+                <li>
+                    <p>ICO & IDO Projects</p>
+                </li>
+            </ul>
+            
+            
+            
+            <ul class="contact">
+                <li>
+                    <p>Contact</p>
+                </li>
                 <li>
                     <a href="mailto:hello@dappsfactory.io">
                         <img src="./img/email.svg" alt="">
@@ -451,11 +499,15 @@
                     <img src="./img/telefono.svg" alt="">
                     Tel. +54 11-7079-1777
                 </li>
-            </ul>
         </div>
 
         <div class="redesSociales">
             <ul>
+                <li>
+                    <a href="https://t.me/DAppsFactory" target="_blank">
+                        <img src="./img/iconoTelegram.svg" alt="">
+                    </a>
+                </li>
                 <li>
                     <a href="https://www.instagram.com/dappsfactory/" target="_blank">
                         <img src="./img/instagram.svg" alt="">
