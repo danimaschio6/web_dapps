@@ -11,7 +11,6 @@
 
  header.abajo{
     background-color:  #12054D;
-
     position: fixed;
     left: 0;
     top: 0;
@@ -19,6 +18,8 @@
     width: 100%;
     z-index: 1;
  }
+
+
 
  header.abajo .logoDappsInicio{
     display: none;
@@ -58,6 +59,7 @@
      border-radius: 15px;
      border: none;
      background-color: #B086CC;
+     margin-top: 0.5rem
 
  }
 
@@ -602,14 +604,24 @@
      font-style: italic;
      font-weight: 600;
      font-size: 30px;
-     background-image: url(./img/Ilustracionform.svg);
-     background-repeat: no-repeat;
-     min-height: 582px;
-     min-width: 605px;
-     /* width: 100%; */
+     /* background-image: url(./img/Ilustracionform.svg);
+     background-repeat: no-repeat; */
+     min-height: 582px; 
+     /* min-width: 605px; */
+     width: 100%;
      z-index: 999;
      text-align: left;
  }
+
+
+ /* @media (max-width: 1400px) {
+    .card{
+        min-height: 480px;
+    }
+} */
+
+
+
 
  /* .direccion ul .dir {
      width: 25rem;
@@ -746,7 +758,7 @@
     .logoDapps {
         border-right: none;
         margin-bottom: 2rem;
-/* aca */
+
     }
     .redesSociales {
         border-left: none;
@@ -1210,9 +1222,9 @@
         margin: 0;
     }
 
-    .datosFooter{
-        display: flex;
-        flex-direction: column;
+    .datosFooter .services{
+        display: none;
+
     }
 
 
